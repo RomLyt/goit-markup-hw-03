@@ -24,9 +24,15 @@ body {
 .list {
     list-style: none;
     text-decoration: none;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 button {
+    min width: 169px;
+    border-radius: 4px;
+    padding: 16px 32px;
+    
     font-family: inherit;
     cursor: pointer;
     border: none;
@@ -34,13 +40,50 @@ button {
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
-    line-height: 24px;
+    line-height: 1.5;
     letter-spacing: 0.04em;
+    text-align: center;
+
 }
 
+.boxx {
+    background-color: rgb(104, 104, 104);
+    outline: 1px solid red;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    /* outline: 1px solid red; */
+    /* background-color: rgb(193, 211, 201); */
+}
+
+.ghost {
+    display: none;
+}
+
+/* Page header */
+.page-header {
+    border-bottom: 1px solid #E7E9FC;
+}
+
+.header-cont {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 
 /* logo */
 .logo {
+    display: block;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    margin-right: 76px;
+
     color: var(--accent-color);
     font-family: Raleway, sans-serif;
     font-weight: 800;
@@ -52,12 +95,32 @@ button {
 .logo-white {color: var(--second-white-color);}
 
 /* Навігація контакти */
+
+.navigation {
+    display: flex;
+    padding-left: 0;
+}
+.nav-head {
+    display: flex;
+}
+.navigation .item {
+
+}
+.navigation .item:not(:last-child) {
+    margin-right: 40px;
+}
+
 .nav-link {
+    display: block;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--primary-text);
+
 }
 .nav-link:hover,
 .nav-link:focus {
@@ -67,7 +130,19 @@ button {
     color: var(--accent-color);
 }
 
+.contacts {
+    padding-left: 0;
+    display: flex;
+}
+.contacts .item:not(:last-child){
+    margin-right: 40px;
+}
+
 .con-link {
+    display: block;
+    padding-top: 24px;
+    padding-bottom: 24px;
+
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -82,20 +157,32 @@ button {
 
 /* HERO */
 .hero {
+    text-align: center;
+    
     /* властивість для фону на певний час */
-    background-color: #2E2F42;
+    height: 600px;
+    background-color: var(--primary-text);
 }
 .hero-title {
+    padding-top: 188px;
+    margin-top: 0;
+    margin-bottom: 48px;
+
     color: var(--white-text);
     font-weight: 700;
     font-size: 56px;
     line-height: 1.1;
     letter-spacing: 0.02em;
+    text-align: center;
 }
 .hero-button {
+    margin-top: 0;
+    margin-bottom: 0;
+
     color: var(--white-text);
     background-color: var(--accent-color);
-
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    height: 56px;
 }
 .hero-button:hover,
 .hero-button:focus {
@@ -103,73 +190,166 @@ button {
 }
 
 /* Feature */
+
+.feature {
+    display: flex;
+    padding-left: 0;
+    margin-top: 144px;
+}
+.feature .element:not(:last-child){
+    margin-right: 24px;
+}
 .feature-title {
+    margin-top: 0;
+    margin-bottom: 8px;
+    
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
 }
 .feature-text {
+    margin: 0;
+    
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color:var(--secondary-text)
+    color:var(--secondary-text);
 }
 
 /* Doing section */
 .doing-title {
+    margin-top: 96px;
+    margin-bottom: 72px;
+    
     font-weight: 700;
     font-size: 36px;
     line-height: 1.1;
     letter-spacing: 0.02em;
     text-transform: capitalize;
+    text-align: center;
+}
+.doing-img {
+    display: flex;
+    padding: 0; 
+}
+.doing-img li:not(:last-child){
+    margin-right: 24px;
 }
 
 /* Team */
+.team {
+    margin-top: 120px;
+    padding-top: 120px;
+    padding-bottom: 120px;
+    background-color: #F4F4FD;
+}
+.team-card {
+    display: flex;
+    padding: 0;
+}
+.team-card li:not(:last-child) {
+    margin-right: 24px;
+}
 .team-title {
+        margin-bottom: 72px;
+
     font-weight: 700;
     font-size: 36px;
     line-height: 1.1;
     letter-spacing: 0.02em;
+    text-align: center;
 }
 .team-name {
+    display: inline-block;
+    margin-top: 32px;
+    margin-bottom: 8px;
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
+    text-align: center;
 }
 .team-desc {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--secondary-text);
+    margin: 0;
 }
 
 /* Footer */
-.footer {
+footer {
+    padding-top: 100px;
+    padding-bottom: 100px;
     /* властивість для фону на певний час */
     background-color: #2E2F42;
 }
+div.foorer.container {
+    width: 264px;
+    height: 110px;
+
+}
+
 .footer-text {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #E7E9FC;
+    margin-top: 16px;
+    margin-bottom: 0;
 }
 
 /* ***** Portfolio page ***** */
 
 /* Filter */
+.filter-item {
+    display: flex;
+    justify-content: center;
+    margin-top: 96px;
+    margin-bottom: 72px;
+}
 .filter-btn {
     background-color: var(--second-white-color);
     color: var(--accent-color);
+}
+.filter-item > li:not(:last-child) {
+    margin-right: 24px;
 }
 .filter-btn:hover,
 .filter-btn:focus {
     background-color: #404BBF;
     color: #ffffff;
 }
+.portfolio-card {
+    margin-bottom: 120px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.por-bloc {
+    display: block;
+
+}
+.port-border {
+    border-left: 1px solid #E7E9FC;
+    border-bottom: 1px solid #E7E9FC;
+    border-right: 1px solid #E7E9FC;
+}
+.por-card {
+    width: calc((100% - 48px) / 3);
+    margin-bottom: 48px;
+    margin-right: 24px;
+}
+.por-card:nth-child(3n) {
+    margin-right: 0;
+}
+.por-card:nth-last-child(-n + 3) {
+    margin-bottom: 0;
+}
 .card-title {
+    display: inline-block;
+    margin-top: 32px;
+    margin-bottom: 8px;
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
@@ -177,6 +357,7 @@ button {
     color: var(--primary-text);
 }
 .card-desc {
+    margin: 0;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;

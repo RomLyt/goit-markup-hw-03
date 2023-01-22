@@ -13,45 +13,51 @@
         href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
 
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
+
     <link rel="stylesheet" href="./css/styles.css" />
 </head>
 
 <body>
-    <header>
-        <nav>
-            <!-- Logo -->
-            <a class="logo list" href="./index.html">WEB<span class="logo-dark">STUDIO</span></a>
+    <header class="page-header">
+        <div class="header-cont container">
+            <nav class="nav-head">
+                <!-- Logo -->
+                <a class="logo list" href="./index.html">WEB<span class="logo-dark">STUDIO</span></a>
 
-            <!-- Navigation menu -->
-            <ul class="navigation">
-                <li>
-                    <a class="nav-link list" href="./index.html">Studio</a>
+                <!-- Navigation menu -->
+                <ul class="navigation list">
+                    <li class="item">
+                        <a class="nav-link current list" href="./index.html">Studio</a>
+                    </li>
+                    <li class="item">
+                        <a class="nav-link list" href="./portfolio.html">Portfolio</a>
+                    </li>
+                    <li class="item">
+                        <a class="nav-link list" href="">Contacts</a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- Contacts -->
+            <ul class="contacts list">
+                <li class="item">
+                    <a class="con-link list" href="mailto:info@devstudio.com">info@devstudio.com</a>
                 </li>
                 <li>
-                    <a class="nav-link current list" href="./portfolio.html">Portfolio</a>
-                </li>
-                <li>
-                    <a class="nav-link list" href="">Contacts</a>
+                    <a class="con-link list" href="tel:+110001111111">+11 (000) 111-11-11</a>
                 </li>
             </ul>
-        </nav>
-        <!-- Contacts -->
-        <ul class="contacts list">
-            <li>
-                <a class="con-link list" href="mailto:info@devstudio.com">info@devstudio.com</a>
-            </li>
-            <li>
-                <a class="con-link list" href="tel:+110001111111">+11 (000) 111-11-11</a>
-            </li>
-        </ul>
+        </div>
     </header>
+
 
     <main>
 
         <!-- Filter -->
         <section>
-            <h1>Portfolio</h1>
-            <ul class="list">
+            <h1 class="ghost">Portfolio</h1>
+            <ul class="filter-item list">
                 <li>
                     <button class="filter-btn" type="button">All</button>
                 </li>
@@ -71,68 +77,86 @@
 
             <!-- Main section -->
 
-            <ul class="list">
-                <li>
-                    <a class="list" href="">
+            <ul class="portfolio-card container list">
+                <li class="por-card">
+                    <a class="por-bloc list" href="">
                         <img src="./images/portfolio/img1.jpg" alt="row_image" width="360" height="300">
-                        <h2 class="card-title">Banking App Interface Concept</h2>
-                        <p class="card-desc">App</p>
+                        <div class="port-border">
+                            <h2 class="card-title">Banking App Interface Concept</h2>
+                            <p class="card-desc">App</p>
+                        </div>
                     </a>
                 </li>
-                <li>
-                    <a class="list" href="">
+                <li class="por-card">
+                    <a class="por-bloc list" href="">
                         <img src="./images/portfolio/img2.jpg" alt="row_image" width="360" height="300">
-                        <h2 class="card-title">Cashless Payment</h2>
-                        <p class="card-desc">Marketing</p>
+                        <div class="port-border">
+                            <h2 class="card-title">Cashless Payment</h2>
+                            <p class="card-desc">Marketing</p>
+                        </div>
                     </a>
                 </li>
-                <li>
-                    <a class="list" href="">
+                <li class="por-card">
+                    <a class="por-bloc list" href="">
                         <img src="./images/portfolio/img3.jpg" alt="row_image" width="360" height="300">
-                        <h2 class="card-title">Meditaion App</h2>
-                        <p class="card-desc">App</p>
+                        <div class="port-border">
+                            <h2 class="card-title">Meditaion App</h2>
+                            <p class="card-desc">App</p>
+                        </div>
                     </a>
                 </li>
-                <li>
-                    <a class="list" href="">
+                <li class="por-card">
+                    <a class="por-bloc list" href="">
                         <img src="./images/portfolio/img4.jpg" alt="row_image" width="360" height="300">
-                        <h2 class="card-title">Taxi Service</h2>
-                        <p class="card-desc">Marketing</p>
+                        <div class="port-border">
+                            <h2 class="card-title">Taxi Service</h2>
+                            <p class="card-desc">Marketing</p>
+                        </div>
                     </a>
                 </li>
-                <li>
-                    <a class="list" href="">
+                <li class="por-card">
+                    <a class="por-bloc list" href="">
                         <img src="./images/portfolio/img5.jpg" alt="row_image" width="360" height="300">
-                        <h2 class="card-title">Screen Illustrations</h2>
-                        <p class="card-desc">Design</p>
+                        <div class="port-border">
+                            <h2 class="card-title">Screen Illustrations</h2>
+                            <p class="card-desc">Design</p>
+                        </div>
                     </a>
                 </li>
-                <li>
-                    <a class="list" href="">
+                <li class="por-card">
+                    <a class="por-bloc list" href="">
                         <img src="./images/portfolio/img6.jpg" alt="row_image" width="360" height="300">
-                        <h2 class="card-title">Online Courses</h2>
-                        <p class="card-desc">Marketing</p>
+                        <div class="port-border">
+                            <h2 class="card-title">Online Courses</h2>
+                            <p class="card-desc">Marketing</p>
+                        </div>
                     </a>
                 </li>
-                <li>
-                    <a class="list" href="">
+                <li class="por-card">
+                    <a class="por-bloc list" href="">
                         <img src="./images/portfolio/img7.jpg" alt="row_image" width="360" height="300">
-                        <h2 class="card-title">Instagram Stories Concept</h2>
-                        <p class="card-desc">Design</p>
+                        <div class="port-border">
+                            <h2 class="card-title">Instagram Stories Concept</h2>
+                            <p class="card-desc">Design</p>
+                        </div>
                     </a>
                 </li>
-                <li>
-                    <a class="list" href="">
+                <li class="por-card">
+                    <a class="por-bloc list" href="">
                         <img src="./images/portfolio/img8.jpg" alt="row_image" width="360" height="300">
-                        <h2 class="card-title">Organic Food</h2>
-                        <p class="card-desc">Web Site</p>
+                        <div class="port-border">
+                            <h2 class="card-title">Organic Food</h2>
+                            <p class="card-desc">Web Site</p>
+                        </div>
                     </a>
                 </li>
-                <li>
-                    <a class="list" href="">
+                <li class="por-card">
+                    <a class="por-bloc list" href="">
                         <img src="./images/portfolio/img9.jpg" alt="row_image" width="360" height="300">
-                        <h2 class="card-title">Fresh Coffee</h2>
-                        <p class="card-desc">Web Site</p>
+                        <div class="port-border">
+                            <h2 class="card-title">Fresh Coffee</h2>
+                            <p class="card-desc">Web Site</p>
+                        </div>
                     </a>
                 </li>
             </ul>
@@ -141,13 +165,13 @@
     </main>
 
     <footer>
-        <div class="footer">
+        <div class="footer container">
             <a class="logo list" href="./index.html">WEB<span class="logo-white">STUDIO</span></a>
-            <p class="footer-text">Increase the flow of customers and sales for your business with digital marketing &
+            <p class="footer-text">Increase the flow of customers and <br> sales for your business with digital <br>
+                marketing &
                 growth solutions.</p>
         </div>
     </footer>
-
 </body>
 
 </html>
