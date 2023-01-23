@@ -54,7 +54,7 @@ button {
 .container {
     margin-left: auto;
     margin-right: auto;
-    width: 1158px;
+    max-width: 1158px;
     padding-left: 15px;
     padding-right: 15px;
 
@@ -64,6 +64,10 @@ button {
 
 .ghost {
     display: none;
+}
+
+img{
+    display: block;
 }
 
 /* Page header */
@@ -157,14 +161,13 @@ button {
 
 /* HERO */
 .hero {
+    padding: 188px 0px;
     text-align: center;
     
     /* властивість для фону на певний час */
-    height: 600px;
     background-color: var(--primary-text);
 }
 .hero-title {
-    padding-top: 188px;
     margin-top: 0;
     margin-bottom: 48px;
 
@@ -190,11 +193,13 @@ button {
 }
 
 /* Feature */
+.feature-box{
+    padding: 120px 0px;
+}
 
 .feature {
     display: flex;
     padding-left: 0;
-    margin-top: 144px;
 }
 .feature .element:not(:last-child){
     margin-right: 24px;
@@ -218,8 +223,11 @@ button {
 }
 
 /* Doing section */
+.doing{
+    padding-bottom: 120px;
+}
+
 .doing-title {
-    margin-top: 96px;
     margin-bottom: 72px;
     
     font-weight: 700;
@@ -239,7 +247,6 @@ button {
 
 /* Team */
 .team {
-    margin-top: 120px;
     padding-top: 120px;
     padding-bottom: 120px;
     background-color: #F4F4FD;
@@ -247,6 +254,10 @@ button {
 .team-card {
     display: flex;
     padding: 0;
+}
+.team-card li{
+    background-color: #FFFFFF;
+    border-radius: 0px 0px 4px 4px;
 }
 .team-card li:not(:last-child) {
     margin-right: 24px;
@@ -260,15 +271,16 @@ button {
     letter-spacing: 0.02em;
     text-align: center;
 }
+.team-box{
+    padding: 32px 16px;
+    text-align: center;
+}
 .team-name {
-    display: inline-block;
-    margin-top: 32px;
-    margin-bottom: 8px;
+    margin: 0px 0px 8px 0px;
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    text-align: center;
 }
 .team-desc {
     font-size: 16px;
@@ -292,22 +304,29 @@ div.foorer.container {
 }
 
 .footer-text {
-    font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #E7E9FC;
-    margin-top: 16px;
     margin-bottom: 0;
+    margin-top: 0;
+}
+.footer .logo{
+    padding-top: 0;
+    padding-bottom: 16px;
+
 }
 
 /* ***** Portfolio page ***** */
 
 /* Filter */
+
+.filter-section{
+    padding-top: 96px;
+    padding-bottom: 72px;
+}
 .filter-item {
     display: flex;
     justify-content: center;
-    margin-top: 96px;
-    margin-bottom: 72px;
 }
 .filter-btn {
     background-color: var(--second-white-color);
@@ -321,35 +340,30 @@ div.foorer.container {
     background-color: #404BBF;
     color: #ffffff;
 }
+
+/* Portfolio cards */
+
 .portfolio-card {
-    margin-bottom: 120px;
+    padding-bottom: 120px;
     display: flex;
     flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 48px;
+    padding-left: 0;
 }
 .por-bloc {
     display: block;
 
 }
 .port-border {
+    padding: 32px 16px;
+
     border-left: 1px solid #E7E9FC;
     border-bottom: 1px solid #E7E9FC;
     border-right: 1px solid #E7E9FC;
 }
-.por-card {
-    width: calc((100% - 48px) / 3);
-    margin-bottom: 48px;
-    margin-right: 24px;
-}
-.por-card:nth-child(3n) {
-    margin-right: 0;
-}
-.por-card:nth-last-child(-n + 3) {
-    margin-bottom: 0;
-}
 .card-title {
-    display: inline-block;
-    margin-top: 32px;
-    margin-bottom: 8px;
+    margin:0px 0px 8px 0px;
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
