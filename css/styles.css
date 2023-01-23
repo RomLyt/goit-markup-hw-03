@@ -327,6 +327,7 @@ div.foorer.container {
 .filter-item {
     display: flex;
     justify-content: center;
+    padding-left: 0;
 }
 .filter-btn {
     background-color: var(--second-white-color);
