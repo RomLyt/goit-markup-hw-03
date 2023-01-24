@@ -312,7 +312,8 @@ div.foorer.container {
 }
 .footer .logo{
     padding-top: 0;
-    padding-bottom: 16px;
+    padding-bottom: 0;
+    margin-bottom: 16px;
 
 }
 
